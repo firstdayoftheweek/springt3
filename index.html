@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <div class="main">
+                <tr>
+                    <th>Введите сумму:</th>
+                    <th>Вид операции:</th>
+                    <th>KZT (tenge)</th>
+                    <th>USD (dollar)</th>
+                    <th>EUR (euro)</th>
+                </tr>
+            </div>
+            <div class="result">
+                <tr>
+                    <td>
+                        <input type="number" name="sum" id="sum">
+                        <select name="currency" id="currency">
+                            <option value="kzt">KZT</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="operation" id="operation">
+                            <option value="buy">Buy</option>
+                            <option value="sale">Sale</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" data-currency="kzt" readonly>
+                    </td>
+                    <td>
+                        <input type="text" data-currency="usd" readonly>
+                    </td>
+                    <td>
+                        <input type="text" data-currency="eur" readonly>
+                    </td>
+                    <td>
+                        <button>convert</button>
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
